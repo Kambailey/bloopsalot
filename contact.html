@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+    <style>
+        @import url(stylesheet.css);
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+<main>
+        <header>
+
+            <img class="banner" src="images/pachi.png" alt="Pachirisu">
+
+
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="comics.html">Comics</a></li>
+                    <li><a href="illus.html">Illustrations</a></li>
+                </ul>
+            </nav>
+
+
+            
+        </header>
+
+
+        <h1>Contacts</h1>
+        <div id="contact">
+            <!--Because dear lord are those pictures LARGE-->
+            
+            <h2>Let's talk!</h2>
+               <div id="form"><form method="get">
+                Name: <input type="text" name="name">
+                Reason: <select name="reason">
+                    <option value="comm">Commission Work</option>
+                    <option value="free">Freelance Work</option>
+                    <option value="other">Other Work</option>
+                    <option value="normie">Just Saying Hi!</option>
+                </select><br>
+                Email: <input type="email" name="email"><br>
+                Message: <input type="text" name="message"><br>
+                <input type="submit" value="Send!">
+                <input type="reset" value="Reset">
+               </form></div>
+               <button type="button" onclick="myFunction()"> You ready to send?</button>
+        <script>
+           $(document).ready(function(){
+            $("button").click(function(){
+                   $("#form").hide();
+               });
+           });
+        </script>
+                <h3>And follow me on social media!</h3>
+
+
+        <div id="contactflex">
+            <a id="twitter" href="https://twitter.com/bloopsadoop"> <img style= "width: 50px" src="images/icons/twitter.svg" alt="twitter"> </a>
+            
+            <a id="ig" href="https://instagram.com/bloopsalot"> <img style= "width: 50px" src="images/icons/instagram.svg" alt="instagram"> </a>
+
+            <a id="tumblr" href="https://bloopsalot.tumblr.com"> <img style= "width: 30px" src="images/icons/tumblr.svg" alt="tumblr"> </a>
+        </div>
+
+
+    <img style= "width:700px" src="images/worm_moon.png" alt="A worm on a string on the moon.">
+
+</div>
+
+
+
+<footer> 
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="comics.html">Comics</a></li>
+            <li><a href="illus.html">Illustrations</a></li>
+        </ul>
+    
+    </nav> 
+    
+    
+    <small>This website is currently fake and made for educational purposes. &copy;2024  </small> 
+</footer>
+
+</main>
+</body>
+
+</html>

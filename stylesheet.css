@@ -1,0 +1,532 @@
+@charset "utf-8";
+
+/* 
+COLORS USED: 
+    Navy #191970
+    Azure #F0FFFF rgb(240, 255, 255)
+    White
+    Whitesmoke #f5f5f5 rgb(245,245,245)
+    Orange Red > #CC5500 rgb(204, 85, 0)
+    Mango> #f4bb44  rgb(244, 187, 68)
+    Cream> #FFFDD0  rgb(255, 253, 208)
+*/
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: left;
+    color: #191970;
+    margin-left: 50px;
+    max-width: 1200px;
+    background-color: #f4bb44;
+    margin: 0 auto;
+}
+
+main{
+    background-color: azure;
+    margin: 0 auto;
+}
+
+h1 {
+    color:navy;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-stretch: expanded; /* This SHOULD have stretched the Hello! Im Katie! thing, but I use Firefox, so it doesn't show. */
+    padding-left: 1em;
+
+}
+
+h2{
+    font:bold x-large 'Lucida Sans', sans-serif;
+    text-decoration: underline 3px;
+    color: #CC5500;
+    padding-left: 1em;
+
+}
+
+h3, dt{
+    text-decoration: underline 3px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+hr{
+    color:navy
+}
+
+dd{
+    text-align: right;
+    margin-left: 10em;
+    margin-right: 2em;
+}
+
+p {
+    padding: 20px;
+}
+
+p, .comic{
+    border: 1px solid #CC5500;
+    border-radius: 5px;
+    margin-left: 5em;
+    margin-right: 6em;
+    text-align: justify;
+    background-color:#FFFDD0;
+}
+
+
+ul{
+    list-style-type:square;
+    list-style-position:inside;
+}
+
+img{
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.logo{
+ float: left;   
+}
+
+.banner{
+width: 100%;
+background-image: url(images/pachi.png);
+height: 400px;
+background-position: center;
+margin: 0;
+}
+
+
+
+/* Linked images to other sites */
+
+.linked {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 50px;
+    margin-top: 3em;
+}
+.linked p{
+    margin-left: 0px;
+}
+
+.linked img:hover{
+    transform:scale(1.05);
+}
+
+/* normal links */
+
+a:link {
+    color:#FFFDD0;
+}
+a:hover {
+    color:#f4bb44;
+    background-color: whitesmoke;
+}
+
+
+
+.button, button{
+    border: none;
+    border-radius: 10px;
+    background-color:  #CC5500;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3em;
+    color:white
+}
+
+.button:hover{
+    background-color:navy;
+    color: azure;
+}
+
+/* ----------NAV STYLE--------- */
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+    background-color: navy;
+    padding: 1em;
+    margin: 0;
+    gap: 3em;
+}
+
+/* Styling nav links */
+.navbar a{
+    color:white;
+    padding: 13px 40px;
+    text-decoration: none;
+}
+
+/* hover style */
+.navbar a:hover {
+    background-color: #CC5500;
+    color:#FFFDD0;
+    padding: 17px 40px;
+
+}
+
+/*Contact flexbox*/
+#contactflex{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    grid-gap: 18em;
+
+}
+
+
+
+/*Portfolio grid*/
+
+#portfolio {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 10px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "death kon stars"
+    "wayrick blood palestine"
+    ;
+
+    padding: 3em;
+}
+
+#death{grid-area: death;}
+#red{grid-area: kon;}
+#stars {grid-area: stars;}
+#blood {grid-area: blood;}
+#pachirisu {grid-area: pachirisu;}
+#wayrick {grid-area: wayrick;}
+#palestine {grid-area: palestine;}
+
+#me img{
+    float: right;
+}
+
+#me p{
+    margin-right: 20em;
+}
+
+/*Zelda flex*/
+
+#zelda{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*Comics Grid*/
+
+#comsgrid{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20em 15em 25em 10em;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "HHI HHD HHD HHD"
+    "SFD SFI PPD PPI"
+    ;
+}
+
+#comsgrid p{
+    margin: 1em;
+}
+
+#HHDes{grid-area: HHD;}
+#HHimg{grid-area: HHI;
+max-width: 30em;}
+
+#SFDes{grid-area: SFD;}
+#SFimg{grid-area: SFI;
+max-width: 13em;
+padding-bottom: 1em;}
+
+#PPDes{grid-area: PPD;}
+#PPimg{grid-area: PPI;
+max-width: 12em;}
+
+
+
+/* Illustrations grid */
+
+#Illustrationgrid{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding-left: 1em;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "origins originsdes SF SFdes"
+    "redvelvet redvelvetdes death deathdes"
+    
+}
+
+#Illustrationgrid p{
+    margin: 1em;
+}
+
+#origins{grid-area: origins;}
+#originsdes{grid-area: originsdes;}
+#SF{grid-area: SF;}
+#SFdes{grid-area: SFdes;}
+#redvelvet{grid-area: redvelvet;}
+#redvelvetdes{grid-area: redvelvetdes;}
+#death{grid-area: death;}
+#deathdes{grid-area: deathdes;}
+
+/* tiny contact page section */
+
+#contact {
+    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+/*Previews*/
+
+#previews img{
+    display: grid;
+    min-width: 600px;
+    max-width: 1000px;
+    align-content: center;
+    grid-template-columns: auto;
+    margin: 0;
+
+}
+
+
+
+/*Socmeds*/
+
+#icons img{
+    width: 30px;
+    height: 30px; 
+    padding: 0;
+}
+
+/* Form */
+
+form{
+    color: navy;
+    background-color: #FFFDD0;
+    border: 3px navy solid;
+    padding: 2em;
+    
+}
+#form{
+    margin: 7em;
+}
+
+input[name=message]{
+    width: 85%;
+    padding: 12px;
+    margin: 8px 50px;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+select, input[type=submit], input[type=reset] {
+    background-color: #CC5500;
+    border-radius: 5px;
+    border:none;
+    text-decoration: none;
+    color: #FFFDD0;
+    padding: 1em;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: #CC5500;
+    color: #FFFDD0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover{
+    background-color: #191970;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 300px) and (max-width:600px){
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .navbar a{
+        padding: 1px;
+        margin: 3px;
+    }
+    .navbar a:hover{
+        padding: 10px;
+    }
+
+
+
+    .intro, p{
+            margin: 3px;
+            padding: 1em;
+    }
+
+    .linked{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #portfolio{ /*I've tried multiple ways, but this image grid isn't happy with me :( ASK THE PROF*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px;
+        grid-gap:5px;
+        
+    }
+
+    #portfolio img{
+        max-width: 150%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #death{grid-area: death;}
+    #red{grid-area: kon;}
+    #stars {grid-area: stars;}
+    #blood {grid-area: blood;}
+    #wayrick {grid-area: wayrick;}
+    #palestine {grid-area: palestine;}
+
+    /* Illustration grid*/
+    #Illustrationgrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* About Page */
+    #zelda{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    #me img{
+        max-width: 25%;
+    }
+    #me p{
+        margin: auto;
+        padding: 1em;
+    }
+
+     /* Comsgrid */
+
+      #comsgrid{
+         display: flex;
+         flex-wrap: wrap;
+            }
+    /* Contacts page */
+
+
+        #contactflex{
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap:5em;
+        }
+        #contact, h2, h3{
+            margin: auto;
+            justify-content: center;
+        }
+        .form{
+            display:block;
+        }
+        form{
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 940px){
+        .navbar{
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 10px;
+            margin: 0;
+        }
+        .navbar a{
+            padding: 1em;
+            margin: 0;
+        }
+        .navbar a:hover{
+            padding: 11px;
+        }
+
+        .linked {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        #portfolio{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0px;
+            grid-gap:5px;
+        }
+
+        /* Illustration grid*/
+        #Illustrationgrid{
+            display: flex;
+            flex-wrap: wrap;
+    }
+        /* About Page */
+        #zelda{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+    
+        /* Comsgrid */
+
+        .comsgrid{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        
+
+    }
+
+
+    @media screen and (min-width:940px) {
+        .navbar{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .navbar a{
+            padding: 3px;
+            margin: 0;
+        }
+
+    }

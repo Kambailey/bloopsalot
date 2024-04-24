@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comic Preview</title>
+
+    <style>
+        @import url(../stylesheet.css);
+    </style>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+
+            <img class="banner" src="../images/pachi.png" alt="Pachirisu">
+    
+            <nav>
+                <ul class="navbar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../comics.html">Comics</a></li>
+                    <li><a href="../illus.html">Illustrations</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button> 
+<script>
+    //get the button
+    let mybutton = document.getElementById("myBtn");
+    //when scrolling past 20px, show button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+//when clicked, scroll time
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
+
+    <div id="previews">
+
+        <h1>Haunted Housemate</h1>
+
+        <img src="34.png" alt="Page 34">
+        <img src="35.png" alt="Page 35">
+        <img src="36.png" alt="Page 36">
+
+        <h1> Stars Fountain</h1>
+
+        <img src="1.png" alt="page 1">
+        <img src="2.png" alt="page 2">
+        <img src="3.png" alt="page 3">
+        <img src="4.png" alt="page 4">
+        <img src="5.png" alt="page 5">
+    </div>
+   
+
+<footer>
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../comics.html">Comics</a></li>
+            <li><a href="../illus.html">Illustrations</a></li>
+        </ul>
+    </nav>
+<div id="icons">
+    <small>
+        This website is currently fake and made for educational purposes. &copy;2024 
+        <a href="https://twitter.com/bloopsadoop"> <img style= "width: 50px" src="../images/icons/twitter.svg" alt="twitter"> </a>
+        <a href="https://instagram.com/bloopsalot"> <img style= "width: 50px" src="../images/icons/instagram.svg" alt="instagram"> </a>
+        <a href="https://bloopsalot.tumblr.com"> <img style= "width: 30px" src="../images/icons/tumblr.svg" alt="tumblr"> </a> 
+    </small>  
+  </div>
+
+
+</footer>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Comics</title>
+
+    <style>
+        @import url(stylesheet.css);
+    </style>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+    </script>
+</head>
+
+
+<body>
+    <main>
+    <header>
+
+        <img class="banner" src="images/pachi.png" alt="Pachirisu">
+
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="comics.html">Comics</a></li>
+                <li><a href="illus.html">Illustrations</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+
+
+<h1>Comics</h1>
+
+<a class= "button" href="comics/comicsampler.html">Read some exerpts!</a>
+
+<div id="comsgrid">
+
+    <div id="HHDes">
+        <h2>Haunted Housemate</h2>
+                
+            <p>A Veritcal Scrolling Webcomic, telling the story of a man who should be dead meeting a girl who is. They learn they are deserving of love despite their traumas and grow together as people. <br><br> Konstantin is a veteran who can barely remember his past. All he knows is that he deserves the scars on his face and wrists but he can't pinpoint why. Kaytlyn is a gentle soul who died in 1963, and is reluctant to tell why, despite her violent outbursts. Over time, they may reveal the truth, or discover it themselves. However, first thing's first, someone needs to make breakfast. <br><br> <a class= "button"  href="https://www.webtoons.com/en/canvas/haunted-housemate/list?title_no=483171">Read it on Webtoons!</a></p> 
+        </div>
+         <img id="HHimg" src="images/34_promo.png" alt="A promo image of Haunted Housemate">
+
+    
+<br>
+<div id="SFDes">
+    <h2>Stars Fountain</h2>
+
+        <p> An Action Adventure graphic novel <em>in progress,</em> telling the story of a pacifist, in the middle of a war with monsters, searching for her missing friends. <em>A Work In Progress, Coming Soon!</em></p>
+
+    </div>
+         <img id="SFimg" src="images/title_page.png" alt="The title page of Stars' Fountain."> 
+                
+    <div id="PPDes">
+    <h2>Plushie Park</h2>
+            <p>A gag a day comic about a couple of toys who work in a theme park. It's Semi-autobiographical but not based on real incidents. <em> A Work In Progress, Coming Soon!</em></p>
+            </div>
+
+                <img id="PPimg" src="images/bday_2023.png" alt="A sketch of a plush elf.">
+
+
+
+</div>
+
+
+<footer> 
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="comics.html">Comics</a></li>
+            <li><a href="illus.html">Illustrations</a></li>
+        </ul>
+    
+    </nav>
+    <div id="icons">
+    <small>
+    This website is currently fake and made for educational purposes. &copy;2024 
+   
+    <a href="https://twitter.com/bloopsadoop"> <img style= "width: 50px" src="images/icons/twitter.svg" alt="twitter"></a>
+    <a href="https://instagram.com/bloopsalot"> <img style= "width: 50px" src="images/icons/instagram.svg" alt="instagram"></a>
+     <a href="https://bloopsalot.tumblr.com"> <img style= "width: 30px" src="images/icons/tumblr.svg" alt="tumblr"></a> 
+</small> </div></footer>
+</main>
+</body>
+
+
+
+</html>
